@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <div id="controls">
+      <input type="text" id="vid-url-input" placeholder="Movie URL here ..." />
+      <button id="vid-load-btn">Load Movie</button>
+      <span id="vid-load-state"></span>
+      <br />
+      <input
+        type="text"
+        id="sub-url-input"
+        placeholder="Subtitle URL here ...(.zip,.srt,.vvt)"
+      />
+      <button id="sub-load-btn">Load Subtitle</button>
+      <span id="sub-load-state"></span>
+      <br />
+      <div id="sub-options">
+        <label for="enc-select">Encoding:</label>
+        <select id="enc-select">
+          <option value="utf8">utf8</option>
+          <option value="cp1256">cp1256</option>
+        </select>
+        <lable for="sub-select">Subtitles:</lable>
+        <select id="sub-select"></select>
+        <button id="sub-apply-btn">Apply</button>
+        <span id="sub-apply-state"></span>
+      </div>
+      <div id="vid-container">
+        <video id="vid" width="600" controls></video>
+      </div>
+    </div>
+    <textarea id="log" rows="10" cols="100"></textarea>
+    <script src="./main.js?v=19"></script>
+  </body>
+</html>
