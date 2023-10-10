@@ -22,10 +22,12 @@
     "node-fetch": "2.6.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20",
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.1",
     "@babel/node": "^7.19.1",
-    "@babel/preset-env": "^7.19.1"
+    "@babel/preset-env": "^7.19.1",
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
   }
 }
